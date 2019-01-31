@@ -1,5 +1,5 @@
 # Summary
 
-* [webpack-apicloud](README.md)
-    * [项目结构](structure.md)
+* [简述](README.md)
+* [项目结构](structure.md)
 

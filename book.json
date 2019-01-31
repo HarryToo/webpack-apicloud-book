@@ -1,0 +1,71 @@
+{
+    "author": "du hang",
+    "title": "webpack-apicloud",
+    "description": "webpack-apicloud 说明文档",
+    "language": "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-plus",
+        "github",
+        "donate",
+        "splitter",
+        "anchor-navigation-ex",
+        "-sharing",
+        "sharing-plus",
+        "-highlight",
+        "prism"
+    ],
+    "pluginsConfig": {
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": false,
+            "whatsapp": false,
+            "all": [
+                "weibo",
+                "qq",
+                "qzone",
+                "google",
+                "douban"
+            ]
+        },
+        "github": {
+            "url": "https://github.com/duhang666"
+        },
+        "donate": {
+            "wechat": "http://image.doinblog.com/wechat_reward.jpgwechat_reward.jpg",
+            "button": "打赏",
+            "wechatText": "多少是个意思"
+        },
+        "anchor-navigation-ex": {
+            "associatedWithSummary": false,
+            "multipleH1": false
+        },
+        "theme-default": {
+            "showLevel": true
+        },
+        "fontsettings": {
+            "theme": "white",
+            "size": 2
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
+        }
+    }
+}
