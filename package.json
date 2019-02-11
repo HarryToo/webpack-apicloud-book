@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "publish": "gh-pages -d _book"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
