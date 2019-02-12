@@ -8,3 +8,4 @@
 ## 文档
 * [app.js](doc/app.md)
 * [vue组件](doc/components.md)
+* [vue指令](doc/directive.md)
