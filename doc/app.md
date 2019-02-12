@@ -1,3 +1,5 @@
+# app.js
+
 ## resolvePath(url)
 > 根据开发/生产环境解析页面文件绝对路径
 

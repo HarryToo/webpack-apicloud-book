@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build",
     "publish": "gh-pages -d _book"
   },
   "devDependencies": {
