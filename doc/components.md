@@ -1,3 +1,5 @@
+# vue组件
+
 ## AppHeader
 > 页面标题栏（注意需要`fixStatusBar(header)`）
 
