@@ -14,7 +14,7 @@
 - 对于js，使用[Babel](https://babel.docschina.org)+[Polyfill](https://babel.docschina.org/docs/en/babel-polyfill)编译；对于样式编写及适配，引入[Sass](https://www.sass.hk)及[Postcss](https://www.postcss.com.cn)处理器
 - 放弃jQuery，各方面考量下选择了引用客户端环境的[Vue.js](https://cn.vuejs.org/v2/guide)，处理了方法及Vue实例等变量导出及使用方式
 - 个别问题的试探和处理，如点击延时、Vue中`tapmode`使用方案、图片引用和打包构建方式、文件和项目基本结构设计等
-- 参照以往项目情况，完成了一些基本的变量、方法、组件和指令的封装，各环境配置构建及优化整理，测试及demo编写
+- 参照以往项目情况，完成了一些基本的变量、方法、组件和指令的封装，各环境配置构建及优化整理，demo编写及测试
 
 ## 有什么用
 - 开发环境启用[HMR](https://webpack.docschina.org/concepts/hot-module-replacement)，js和样式等依赖文件修改自动热更新，免去每次修改需重新同步再在手机上操作后才能预览效果
