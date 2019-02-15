@@ -16,12 +16,11 @@ npm i
 ```
 3. 执行`npm run server`启动开发环境服务，wifi同步一次
 4. 愉快的 coding 阶段 😑...
-5. 修改`config.xml`的入口html地址
+5. 执行`npm run build`开始生产环境打包构建
+6. 修改`dist/config.xml`的入口html地址
 ```xml
-<!--生产环境为dist目录-->
-<content src="dist/index.html"/>
+<content src="index.html"/>
 ```
-7. 执行`npm run build`开始生产环境打包构建
 
 ## NPM scripts
 script|说明
