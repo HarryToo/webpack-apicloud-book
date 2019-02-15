@@ -74,6 +74,7 @@ pullup|上滑加载
 
 示例:
 ```html
+<!--使用AppBody组件，外层dom的id须为view-->
 <div id="view">
     <app-header :back="false">首页</app-header>
     <app-body :pulldown="true" @pulldown="getData" :pullup="true" @pullup="loadMore">

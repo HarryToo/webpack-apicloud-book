@@ -18,7 +18,7 @@
 |   |   |-- app.js                  基于api或基本业务方法封装
 |   |   |-- util.js                 工具方法和vue指令等
 |   |-- components                  vue可复用性组件
-|   |-- config                      接口域名和api请求配置
+|   |-- config                      接口域名和api请求等配置
 |   |   |-- config.js               开发、生产环境相关接口域名等配置
 |   |   |-- req.js                  各种api请求管理配置
 |   |-- views                       页面视图文件（html、scss、图片）
@@ -40,5 +40,6 @@
 - `src/assets/app.js` 建议统一存放基于api封装的基本方法和复用性业务方法（如登陆拦截），`app`已导出为全局变量，方便直接通过`app.fun()`方式调用
 - `src/assets/util.js` 建议存放工具方法，自定义指令以及vue模板
 - `src/components` 建议放置编写的vue组件，可分为基础组件（如按钮、表单等基本元素）、复用性业务模块组件（如某列表功能块）两大类
+- `src/config/req.js` 建议按各接口所属功能模块，以对象形式管理和使用，eg：`await req.article.getArticleList()`
 - `src/views` 存放主要视图模块，建议严格按照模块层级整理目录，用文件夹隔离模块页面各自的html、js、scss及图片，参考上图
 - 建议git仓库存放开发环境代码方便管理分支及版本，项目上线时，经webapck构建后`dist`文件夹下的文件还是提交原APICloud平台的svn通道进行应用打包，你可以在本地建立dev和prod两个工作区已分别存放开发（git）和生产环境（svn）代码
