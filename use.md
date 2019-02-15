@@ -17,10 +17,7 @@ npm i
 3. 执行`npm run server`启动开发环境服务，wifi同步一次
 4. 愉快的 coding 阶段 😑...
 5. 执行`npm run build`开始生产环境打包构建
-6. 修改`dist/config.xml`的入口html地址
-```xml
-<content src="index.html"/>
-```
+6. 拿到`dist`目录下文件去APICloud平台进行应用打包
 
 ## NPM scripts
 script|说明
