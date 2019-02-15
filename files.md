@@ -29,6 +29,7 @@
 |   |-- index.html                  app入口html
 |   |-- index.js                    app入口js
 |-- static                          js、css、font等可直接引用的静态资源
+|-- .gitnore                        git忽略配置文件
 |-- .syncignore                     同步忽略配置文件
 |-- config.xml
 |-- package.json
