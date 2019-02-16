@@ -4,7 +4,6 @@
 ```
 |-- build                           webpack打包配置文件夹
 |   |-- .babelrc                    babel配置文件
-|   |-- config.xml.handle.js        用于生产构建后自动更改config.xml入口html路径
 |   |-- postcss.config.js           postcss配置文件
 |   |-- webpack.common.js           基础构建配置文件
 |   |-- webpack.dev.js              开发环境构建配置文件
