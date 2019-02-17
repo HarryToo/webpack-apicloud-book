@@ -20,7 +20,7 @@
 - 开发环境启用[HMR](https://webpack.docschina.org/concepts/hot-module-replacement)，js和样式等依赖文件修改自动热更新，免去每次修改需重新同步再在手机上操作后才能预览效果
 - html统一由[HtmlWebpackPlugin](https://webpack.docschina.org/plugins/html-webpack-plugin)进行模板处理，无需关心html文件头尾部代码和基本静态资源的引用
 - Sass预处理器节省样式代码，Postcss实现自动补全浏览器兼容样式和px转rem以处理适配问题
-- 生产构建时对图片文件进行适当的压缩处理，以减少项目体积
+- 生产构建时对图片文件进行了适当的压缩处理，以减少项目体积
 - Vue.js代替jQuery来处理交互及模板渲染更加友好，其组件特性和模块化也更方便地随时进行可复用性的vue组件封装，不必每次重复造轮子
 - 使用webpack打包带来环境变量的优点，配置好开发/生产环境接口域名，打包前后不必手动反复切换，减少出错
 - 为项目带来更好的模块化管理方式、更快捷优雅的es6+编码风格和更多可用的npm依赖
