@@ -247,7 +247,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#vue&#x7EC4;&#x4EF6;"><b> </b>vue&#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#appheader"><b>1. </b>AppHeader</a></li><li><span class="title-icon "></span><a href="#appbody"><b>2. </b>AppBody</a></li><li><span class="title-icon "></span><a href="#appbanner"><b>3. </b>AppBanner</a></li></ul></ul></div><a href="#vue&#x7EC4;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="vue&#x7EC4;&#x4EF6;"><a name="vue&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#vue&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a> vue&#x7EC4;&#x4EF6;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#vue&#x7EC4;&#x4EF6;"><b> </b>vue&#x7EC4;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#appheader"><b>1. </b>AppHeader</a></li><li><span class="title-icon "></span><a href="#appbody"><b>2. </b>AppBody</a></li><li><span class="title-icon "></span><a href="#appswiper"><b>3. </b>AppSwiper</a></li></ul></ul></div><a href="#vue&#x7EC4;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="vue&#x7EC4;&#x4EF6;"><a name="vue&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#vue&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a> vue&#x7EC4;&#x4EF6;</h1>
 <h2 id="appheader"><a name="appheader" class="anchor-navigation-ex-anchor" href="#appheader"><i class="fa fa-link" aria-hidden="true"></i></a>1. AppHeader</h2>
 <blockquote>
 <p>&#x9875;&#x9762;&#x6807;&#x9898;&#x680F;&#xFF08;&#x6CE8;&#x610F;&#x9700;&#x8981;<code>fixStatusBar(header)</code>&#xFF09;</p>
@@ -323,9 +323,7 @@
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
     <span class="token function">apiready</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">let</span> header <span class="token operator">=</span> $api<span class="token punctuation">.</span><span class="token function">dom</span><span class="token punctuation">(</span><span class="token string">&apos;header&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>header<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            $api<span class="token punctuation">.</span><span class="token function">fixStatusBar</span><span class="token punctuation">(</span>header<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        $api<span class="token punctuation">.</span><span class="token function">fixStatusBar</span><span class="token punctuation">(</span>header<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     vm<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
         components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -411,9 +409,9 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h2 id="appbanner"><a name="appbanner" class="anchor-navigation-ex-anchor" href="#appbanner"><i class="fa fa-link" aria-hidden="true"></i></a>3. AppBanner</h2>
+<h2 id="appswiper"><a name="appswiper" class="anchor-navigation-ex-anchor" href="#appswiper"><i class="fa fa-link" aria-hidden="true"></i></a>3. AppSwiper</h2>
 <blockquote>
-<p>&#x8F6E;&#x64AD;banner&#xFF0C;better-scroll&#x5B9E;&#x73B0;</p>
+<p>&#x8F6E;&#x64AD;&#x7EC4;&#x4EF6;&#xFF0C;<a href="https://www.swiper.com.cn/api/index.html" target="_blank">Swiper</a>&#x5B9E;&#x73B0;</p>
 </blockquote>
 <h4 id="slot_2"><a name="slot_2" class="anchor-navigation-ex-anchor" href="#slot_2"><i class="fa fa-link" aria-hidden="true"></i></a>slot</h4>
 <table>
@@ -426,7 +424,7 @@
 <tbody>
 <tr>
 <td style="text-align:center">&#x533F;&#x540D;</td>
-<td style="text-align:center">&#x8F6E;&#x64AD;slide&#x5217;&#x8868;&#x533A;&#x57DF;</td>
+<td style="text-align:center">&#x8F6E;&#x64AD;slide&#x5217;&#x8868;&#x533A;&#x57DF;&#xFF08;&#x914D;&#x5408;AppSlide&#x7EC4;&#x4EF6;&#xFF09;</td>
 </tr>
 </tbody>
 </table>
@@ -442,37 +440,63 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">auto-play</td>
-<td style="text-align:center">Boolean</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E0A;&#x6ED1;&#x89E6;&#x5E95;&#x52A0;&#x8F7D;</td>
-</tr>
-<tr>
-<td style="text-align:center">show-dot</td>
-<td style="text-align:center">Boolean</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">&#x662F;&#x5426;&#x81EA;&#x52A8;&#x8F6E;&#x64AD;</td>
-</tr>
-<tr>
 <td style="text-align:center">loop</td>
 <td style="text-align:center">Boolean</td>
 <td style="text-align:center">true</td>
 <td style="text-align:center">&#x662F;&#x5426;&#x9996;&#x5C3E;&#x76F8;&#x63A5;&#x5FAA;&#x73AF;</td>
 </tr>
 <tr>
-<td style="text-align:center">interval</td>
+<td style="text-align:center">auto-play</td>
+<td style="text-align:center">Boolean \</td>
+<td style="text-align:center">Object</td>
+<td style="text-align:center">true</td>
+<td>&#x662F;&#x5426;&#x81EA;&#x52A8;&#x5207;&#x6362;&#xFF0C;&#x53C2;&#x89C1;<a href="https://www.swiper.com.cn/api/autoplay/16.html" target="_blank">&#x539F;&#x914D;&#x7F6E;</a></td>
+</tr>
+<tr>
+<td style="text-align:center">slide-space</td>
+<td style="text-align:center">Number \</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">1</td>
+<td>slide&#x95F4;&#x9699;&#xFF0C;&#x652F;&#x6301;&#x767E;&#x5206;&#x6BD4;</td>
+</tr>
+<tr>
+<td style="text-align:center">slide-index</td>
 <td style="text-align:center">Number</td>
-<td style="text-align:center">2500</td>
-<td style="text-align:center">&#x8F6E;&#x64AD;&#x95F4;&#x9694;&#x65F6;&#x957F;&#xFF08;ms&#xFF09;</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">&#x521D;&#x59CB;slide&#x4E0B;&#x6807;</td>
+</tr>
+<tr>
+<td style="text-align:center">slide-center</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">slide&#x662F;&#x5426;&#x5C45;&#x4E2D;</td>
+</tr>
+<tr>
+<td style="text-align:center">slide-view</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">&#x540C;&#x65F6;&#x5C55;&#x793A;slide&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">slide-group</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">&#x6BCF;&#x7EC4;slide&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">pagination</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x663E;&#x793A;&#x9875;&#x7801;&#x5C0F;&#x5706;&#x70B9;</td>
 </tr>
 </tbody>
 </table>
 <p>&#x793A;&#x4F8B;:</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-banner</span> <span class="token attr-name">:show-dot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:auto-play</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:loop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:interval</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>3000<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment">&lt;!--&#x6CE8;&#x610F;&#x5185;&#x90E8;dom&#x7ED3;&#x6784;&#x4E00;&#x81F4;--&gt;</span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&lt;%= require(<span class="token punctuation">&apos;</span>./img1.png<span class="token punctuation">&apos;</span>) %&gt;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&lt;%= require(<span class="token punctuation">&apos;</span>./img2.png<span class="token punctuation">&apos;</span>) %&gt;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-banner</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-swiper</span> <span class="token attr-name">:slide-index</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:slide-center</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">slide-space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>4%<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:slide-view</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1.2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-slide</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&lt;%= require(<span class="token punctuation">&apos;</span>./img1.png<span class="token punctuation">&apos;</span>) %&gt;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-slide</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-slide</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&lt;%= require(<span class="token punctuation">&apos;</span>./img1.png<span class="token punctuation">&apos;</span>) %&gt;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-slide</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-slide</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&lt;%= require(<span class="token punctuation">&apos;</span>./img1.png<span class="token punctuation">&apos;</span>) %&gt;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-slide</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-swiper</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 
                                 
@@ -517,7 +541,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vue组件","level":"2.2","depth":1,"next":{"title":"vue指令","level":"2.3","depth":1,"path":"doc/directive.md","ref":"doc/directive.md","articles":[]},"previous":{"title":"app.js","level":"2.1","depth":1,"path":"doc/app.md","ref":"doc/app.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/duhang666/webpack-apicloud"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.doinblog.com/wechat_reward.jpgwechat_reward.jpg","wechatText":"多少是个意思"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone","google","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"du hang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"webpack-apicloud","language":"zh-hans","gitbook":"*","description":"webpack-apicloud 说明文档"},"file":{"path":"doc/components.md","mtime":"2019-02-17T01:34:51.484Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T07:09:56.319Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue组件","level":"2.2","depth":1,"next":{"title":"vue指令","level":"2.3","depth":1,"path":"doc/directive.md","ref":"doc/directive.md","articles":[]},"previous":{"title":"app.js","level":"2.1","depth":1,"path":"doc/app.md","ref":"doc/app.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/duhang666/webpack-apicloud"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://image.doinblog.com/wechat_reward.jpgwechat_reward.jpg","wechatText":"多少是个意思"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone","google","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"du hang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"webpack-apicloud","language":"zh-hans","gitbook":"*","description":"webpack-apicloud 说明文档"},"file":{"path":"doc/components.md","mtime":"2019-02-19T00:49:41.142Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-19T00:50:09.294Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
