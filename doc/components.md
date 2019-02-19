@@ -35,9 +35,7 @@ import {AppHeader} from '@/components/basic'
 export default {
     apiready() {
         let header = $api.dom('header');
-        if (header) {
-            $api.fixStatusBar(header);
-        }
+        $api.fixStatusBar(header);
     },
     vm: new Vue({
         components: {
@@ -83,27 +81,31 @@ pullup|上滑加载
 </div>
 ```
 
-## AppBanner
-> 轮播banner，better-scroll实现
+## AppSwiper
+> 轮播组件，[Swiper](https://www.swiper.com.cn/api/index.html)实现
 
 #### slot
 slot名|说明
 :--:|:--:
-匿名|轮播slide列表区域
+匿名|轮播slide列表区域（配合AppSlide组件）
 
 #### prop
 参数名|类型|默认值|说明
 :--:|:--:|:--:|:--:
-auto-play|Boolean|true|是否开启上滑触底加载
-show-dot|Boolean|true|是否自动轮播
 loop|Boolean|true|是否首尾相接循环
-interval|Number|2500|轮播间隔时长（ms）
+auto-play|Boolean \| Object|true|是否自动切换，参见[原配置](https://www.swiper.com.cn/api/autoplay/16.html)
+slide-space|Number \| String|1|slide间隙，支持百分比
+slide-index|Number|0|初始slide下标
+slide-center|Boolean|false|slide是否居中
+slide-view|Number|1|同时展示slide数
+slide-group|Number|1|每组slide数
+pagination|Boolean|false|是否显示页码小圆点
 
 示例:
 ```html
-<app-banner :show-dot="true" :auto-play="true" :loop="true" :interval="3000">
-    <!--注意内部dom结构一致-->
-    <img src="<%= require('./img1.png') %>" alt="">
-    <img src="<%= require('./img2.png') %>" alt="">
-</app-banner>
+<app-swiper :slide-index="1" :slide-center="true" slide-space="4%" :slide-view="1.2">
+    <app-slide><img src="<%= require('./img1.png') %>" alt=""></app-slide>
+    <app-slide><img src="<%= require('./img1.png') %>" alt=""></app-slide>
+    <app-slide><img src="<%= require('./img1.png') %>" alt=""></app-slide>
+</app-swiper>
 ```

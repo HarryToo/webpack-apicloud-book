@@ -8,8 +8,7 @@
 1. 执行`npm i`安装项目基础依赖
 2. 修改`config.xml`的入口html地址
 ```xml
-<!--开发环境为http://本机IP:8888/index.html-->
-<content src="http://192.168.1.2:8888/index.html"/>
+<content src="http://本机IP:8888/index.html"/>
 ```
 3. 执行`npm run server`启动开发环境服务，首次需wifi同步一次
 4. 愉快的 coding 阶段 😑...
